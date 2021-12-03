@@ -9,7 +9,7 @@ no@extends('app')
 
            
                  <li class="mx-8">
-                    <p class="text-x1 font-bold "><h1>BIENVENIDOnose</h1>  <b></b></p>
+                    <p class="text-x1 font-bold "><h1>BIENVENIDO</h1>  <b></b></p>
                 </li>
 
                 
