@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'Orden')
+@section('title', 'Detalles Orden')
 
 @section('content')
 
@@ -9,15 +9,13 @@
 
            
                  <li class="mx-8">
-                    <p class="text-x1 font-bold "><h1>ORDENES PRODUCTOS</h1>  <b></b></p>
+                    <p class="text-x1 font-bold "><h1>DETALLES PRODUCTOS</h1>  <b></b></p>
                 </li>
 
                 
                 <li >
-                    <a href="{{route ('dashboard')}}" 
-                    class=" cerrar btn  btn-sm btn-danger py-2 px-4  ">VOLVER INICIO</a>
-                    <a href="{{route ('vista detalles')}}" 
-                    class=" cerrar btn  btn-sm btn-success py-2 px-2  ">DETALLES PRODUCTOS</a>
+                    <a href="{{route ('vista orden')}}" 
+                    class=" cerrar btn  btn-sm btn-danger py-2 px-4  ">VOLVER A ORDENES</a>
                   
                 </li>
                 
@@ -28,7 +26,7 @@
                 <table class="table table-bordered pd-sm-5px">
                     <thead class="thead-dark">
                         <tr>
-                        <th scope="col">Nº ORDEN</th>
+                        <th scope="col">Nº1 ORDEN</th>
                         <th scope="col">FECHA</th>
                         <th scope="col">MONTO</th>
                         <th scope="col">ESTADO</th>

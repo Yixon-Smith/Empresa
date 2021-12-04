@@ -24,5 +24,18 @@ class HomeController extends Controller
         // return redirect()->to('dashboard', compact('us'));
     }
 
+    public function vistaorden(){
+
+
+        return view('pages/ordenvista');
+    } 
+
+    public function vistadetallesorden(){
+
+        return view ('pages/detallesproductos');
+    }
+
 }
+
+
 
