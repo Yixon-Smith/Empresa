@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Users;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Crypt;
+
 
 class UsersController extends Controller
 {
@@ -52,7 +52,7 @@ class UsersController extends Controller
     {
         $this->request->validate([
             'name' => 'required',
-            'apellido' => 'required',
+            'lastname' => 'required',
             'email' => 'required|email',
             'password' => 'required',
         ]);
