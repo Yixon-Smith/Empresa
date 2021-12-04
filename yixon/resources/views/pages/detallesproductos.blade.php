@@ -19,17 +19,14 @@
                   
                 </li>
                 
-                
-                
-
                 <div class="container col-md-8" >
                 <table class="table table-bordered pd-sm-5px">
                     <thead class="thead-dark">
                         <tr>
-                        <th scope="col">Nº1 ORDEN</th>
-                        <th scope="col">FECHA</th>
-                        <th scope="col">MONTO</th>
-                        <th scope="col">ESTADO</th>
+                        <th scope="col">NOMBRE ARTICULO</th>
+                        <th scope="col">CANTIDAD</th>
+                        <th scope="col">PRECIO</th>
+                        <th scope="col">TOTAL</th>
                         </tr>
                     </thead>
                     <tbody>
