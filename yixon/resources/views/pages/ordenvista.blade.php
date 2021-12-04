@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'dashboard')
+@section('title', 'Orden')
 
 @section('content')
 
@@ -9,17 +9,17 @@
 
            
                  <li class="mx-8">
-                    <p class="text-x1 font-bold "><h1>BIENVENIDO A ORDENES PRODUCTOS</h1>  <b></b></p>
+                    <p class="text-x1 font-bold "><h1>Orden</h1>  <b></b></p>
                 </li>
 
                 
                 <li >
-                    <a href="{{route ('logout')}}" 
-                    class=" cerrar btn  btn-sm btn-danger py-2 px-4  ">Cerrar sesion</a>
                     <a href="" 
-                    class=" cerrar btn  btn-sm btn-success py-2 px-2  ">DETALLES PRODUCTOS</a>
+                    class=" cerrar btn  btn-sm btn-danger py-2 px-4  ">VOLVER INICIO</a>
                     <a href="" 
-                    class=" cerrar btn  btn-sm btn-dark py-2 px-2  ">ORDENES PRODUCTOS</a>
+                    class=" cerrar btn  btn-sm btn-success py-2 px-2  ">Consultar Usuarios</a>
+                    <a href="" 
+                    class=" cerrar btn  btn-sm btn-dark py-2 px-2  ">Ordenes Produtos</a>
                 </li>
                 
                 
@@ -35,15 +35,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                            @foreach ($us as $uss )
-
-                            <tr>
-                            <td>{{ $uss->name}}</td>
-                            <td>{{ $uss->username}}</td>
-                            <td>{{ $uss->email}}</td>
-                            </tr>
-
-                            @endforeach
+                           
                         </tbody>
                     </table>
             </div>

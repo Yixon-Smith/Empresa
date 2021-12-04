@@ -15,6 +15,6 @@ Route::get('/logout', [UsersController::class, 'destroy'])->name('logout');
 
 Route::middleware(['auth', 'verified'])->group(function () {
   
-    Route::get('/dashboard', [HomeController::class, 'muestradatos'])->name('usuarios');
+    Route::get('/dashboard', [HomeController::class, 'muestradatos'])->name('dashboard');
  
 });

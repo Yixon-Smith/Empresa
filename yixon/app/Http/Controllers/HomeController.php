@@ -18,10 +18,10 @@ class HomeController extends Controller
 
     public function muestradatos(Home $us)
     {   
-        $us =  Home::tabladatos($this->request->name,$this->request->lastname,$this->request->email);
+        $us =  Home::tabladatos($this->request->name,$this->request->lastname,$this->request->correo);
         //dd($us);
         return view('pages/dashboard', compact('us'));
-       // return redirect()->to('dashboard', compact('us'));
+        // return redirect()->to('dashboard', compact('us'));
     }
 
 }
