@@ -16,7 +16,8 @@ Route::get('/logout', [UsersController::class, 'destroy'])->name('logout');
 Route::middleware(['auth', 'verified'])->group(function () {
   
     Route::get('/dashboard', [HomeController::class, 'muestradatos'])->name('dashboard');
-    Route::get('/orden', [HomeController::class, 'vistaorden'])->name('vista orden');
+    Route::get('/orden', [HomeController::class, 'muestradatos_orden'])->name('vista orden');
+    //Route::get('/orden', [HomeController::class, 'vistaorden'])->name('vista orden');
     Route::get('/detalles', [HomeController::class, 'vistadetallesorden'])->name('vista detalles');
  
 });
