@@ -59,10 +59,10 @@ class UsersController extends Controller
       
          $user = Users::add($this->request->name,$this->request->lastname, $this->request->email, $this->request->password);
          
-        if ( !$user )
-            $this->request->session();
-        else
-            $this->request->session(); 
+        // if ( !$user )
+        //    $this->request->session();
+        // else
+        //    $this->request->session(); 
         return redirect()->to('dashboard');
 
     }

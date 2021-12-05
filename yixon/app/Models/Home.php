@@ -10,10 +10,12 @@ class Home extends Model
 {
     use HasFactory;
 
-    public static function tabladatos($name,$lastname,$correo)
+    public static function tabladatos_usuarios()
     {
-      $us= DB::select("call adddatos('$name','$lastname','$correo')");
+      $us = DB::select("call adddatos()");
 
       return $us;
     }
+
+    
 }
