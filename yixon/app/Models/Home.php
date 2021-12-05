@@ -12,10 +12,17 @@ class Home extends Model
 
     public static function tabladatos_usuarios()
     {
-      $us = DB::select("call adddatos()");
+      $us= DB::select("call adddatos()");
 
       return $us;
     }
 
+    public static function tabladatos_orden()
+    {
+      $orden = DB::select("call add_datos_orden()");
+      
+      return $orden;
+
+    }
     
 }
