@@ -36,7 +36,17 @@
                     </thead>
                     <tbody>
 
-                          
+                    @foreach ($orden as $ordens )
+
+                    <tr>
+                    <td>{{ $ordens->numero_orden}}</td>
+                    <td>{{ $ordens->fecha}}</td>
+                    <td>{{ $ordens->monto}}</td>
+                    <td>{{ $ordens->estado}}</td>
+                    </tr>
+
+                    @endforeach
+                           
                     </tbody>
                     </table>
             </div>

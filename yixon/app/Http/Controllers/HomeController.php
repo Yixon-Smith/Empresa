@@ -19,28 +19,24 @@ class HomeController extends Controller
     public function muestradatos(Home $us)
     {   
         $us =  Home::tabladatos_usuarios();
-        dd($us);
-        //return view('pages/dashboard', compact('us'));
-        // return redirect()->to('dashboard', compact('us'));
+        //dd($us);
+        return view('pages/dashboard', compact('us'));
+        
     }
 
-    public function vistaorden(){
-
-
-        return view('pages/ordenvista');
-    } 
+    
 
     public function vistadetallesorden(){
 
         return view ('pages/detallesproductos');
     }
 
-    public function muestradatos_orden(Home $orden)
+    public function muestradatos_orden()
     {   
-        $orden =  Home::tabladatos_orden($this->request->num,$this->request->fech,$this->request->mon,$this->request->est);
-        dd($orden);
+        $orden =  Home::tabladatos_orden();
+        //dd($orden);
 
-        //return view('pages/orden', compact('orden'));
+       return view('pages/ordenvista', compact('orden'));
     }
 
 }
